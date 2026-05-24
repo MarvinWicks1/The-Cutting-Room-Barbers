@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northstar Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="dashboard">
+    <aside class="sidebar">
+      <a href="index.html" class="logo">Northstar</a>
+      <nav aria-label="Dashboard sections">
+        <a href="#overview">Overview</a>
+        <a href="#insights">Insights</a>
+        <a href="#activity">Activity</a>
+      </nav>
+    </aside>
+
+    <section class="content" id="overview">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">CSS dashboard demo</p>
+          <h1>Project performance dashboard</h1>
+        </div>
+        <a class="back-link" href="https://github.com/MarvinWicks1/Portfolio">Portfolio Repo</a>
+      </header>
+
+      <section class="metrics" aria-label="Dashboard metrics">
+        <article>
+          <span>Total visits</span>
+          <strong>24.8k</strong>
+          <p>Up 18% this month</p>
+        </article>
+        <article>
+          <span>Conversion rate</span>
+          <strong>7.4%</strong>
+          <p>Landing page improved</p>
+        </article>
+        <article>
+          <span>Active projects</span>
+          <strong>12</strong>
+          <p>Three launching soon</p>
+        </article>
+      </section>
+
+      <section class="grid" id="insights">
+        <article class="panel chart-panel">
+          <div class="panel-heading">
+            <h2>Weekly activity</h2>
+            <span>Last 7 days</span>
+          </div>
+          <div class="bar-chart" aria-label="Bar chart visual">
+            <span style="height: 45%"></span>
+            <span style="height: 70%"></span>
+            <span style="height: 55%"></span>
+            <span style="height: 88%"></span>
+            <span style="height: 62%"></span>
+            <span style="height: 95%"></span>
+            <span style="height: 76%"></span>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <h2>Focus areas</h2>
+            <span>Current sprint</span>
+          </div>
+          <ul class="focus-list">
+            <li><span></span> Improve mobile spacing</li>
+            <li><span></span> Refine project copy</li>
+            <li><span></span> Add stronger calls to action</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="panel" id="activity">
+        <div class="panel-heading">
+          <h2>Recent activity</h2>
+          <span>UI sample</span>
+        </div>
+        <div class="activity-list">
+          <article>
+            <strong>Homepage layout reviewed</strong>
+            <p>Spacing and section hierarchy updated for readability.</p>
+          </article>
+          <article>
+            <strong>Project card copy improved</strong>
+            <p>Descriptions now explain goals, audience, and value.</p>
+          </article>
+          <article>
+            <strong>Responsive checks completed</strong>
+            <p>Cards stack neatly across tablet and mobile layouts.</p>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
