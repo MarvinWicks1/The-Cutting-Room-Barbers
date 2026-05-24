@@ -3,201 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Northstar Dashboard</title>
+  <title>The Cutting Room Barbers</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="dashboard">
-    <aside class="sidebar">
-      <a href="index.html" class="logo">Northstar</a>
-      <nav aria-label="Dashboard sections">
-        <a href="#overview">Overview</a>
-        <a href="#projects">Projects</a>
-        <a href="#workload">Workload</a>
-        <a href="#timeline">Timeline</a>
-      </nav>
-      <div class="sidebar-card">
-        <p>Current sprint</p>
-        <strong>72%</strong>
-        <span>Tasks completed across active projects.</span>
+  <header class="site-header">
+    <a href="index.html" class="brand">The Cutting Room</a>
+    <nav aria-label="Primary navigation">
+      <a href="#services">Services</a>
+      <a href="#prices">Prices</a>
+      <a href="#hours">Hours</a>
+      <a href="#contact">Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Local barber shop</p>
+        <h1>Sharp cuts, easy booking, and clear opening times.</h1>
+        <p class="intro">
+          The Cutting Room is a fictional barber shop website concept designed
+          for a local business that needs to show services, prices, opening hours,
+          customer reviews, and a clear way to book.
+        </p>
+        <div class="actions">
+          <a href="#contact" class="button primary">Book an Appointment</a>
+          <a href="#prices" class="button secondary">View Prices</a>
+        </div>
       </div>
-    </aside>
+      <aside class="hero-panel">
+        <p>Walk-ins welcome</p>
+        <strong>Tue–Sat</strong>
+        <span>Classic cuts, skin fades, beard trims, and simple online booking.</span>
+      </aside>
+    </section>
 
-    <section class="content" id="overview">
-      <header class="page-header">
-        <div>
-          <p class="eyebrow">Dashboard UI concept</p>
-          <h1>Project operations dashboard</h1>
-          <p class="header-copy">
-            A responsive dashboard interface for tracking project health,
-            team workload, delivery progress, and recent activity.
-          </p>
-        </div>
-        <a class="back-link" href="https://github.com/MarvinWicks1/Portfolio">Portfolio Repo</a>
-      </header>
+    <section class="feature-strip" aria-label="Business highlights">
+      <article><strong>4.9★</strong><span>example review score</span></article>
+      <article><strong>30 min</strong><span>typical appointment</span></article>
+      <article><strong>Central</strong><span>easy local location</span></article>
+    </section>
 
-      <section class="metrics" aria-label="Dashboard metrics">
-        <article>
-          <span>Total revenue</span>
-          <strong>£42.8k</strong>
-          <p>Up 16% from last month</p>
+    <section id="services" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Services</p>
+        <h2>Simple service cards that make choices easy.</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Classic cut</h3>
+          <p>A clean everyday cut finished with styling and product advice.</p>
         </article>
-        <article>
-          <span>Active projects</span>
-          <strong>12</strong>
-          <p>Three launching this week</p>
+        <article class="service-card dark">
+          <h3>Skin fade</h3>
+          <p>A sharp fade with extra time for detail, blending, and finish.</p>
         </article>
-        <article>
-          <span>Avg. delivery</span>
-          <strong>18d</strong>
-          <p>Two days faster than target</p>
+        <article class="service-card">
+          <h3>Beard trim</h3>
+          <p>Shape, tidy, and finish for beards, stubble, and longer styles.</p>
         </article>
-        <article>
-          <span>Client satisfaction</span>
-          <strong>94%</strong>
-          <p>Based on recent feedback</p>
-        </article>
-      </section>
+      </div>
+    </section>
 
-      <section class="grid" aria-label="Dashboard insights">
-        <article class="panel chart-panel">
-          <div class="panel-heading">
-            <div>
-              <h2>Weekly performance</h2>
-              <p>Revenue, delivery, and activity trend sample.</p>
-            </div>
-            <span>Last 7 days</span>
-          </div>
-          <div class="bar-chart" aria-label="Bar chart visual">
-            <span style="height: 45%"></span>
-            <span style="height: 70%"></span>
-            <span style="height: 55%"></span>
-            <span style="height: 88%"></span>
-            <span style="height: 62%"></span>
-            <span style="height: 95%"></span>
-            <span style="height: 76%"></span>
-          </div>
-        </article>
+    <section class="section split" id="prices">
+      <div>
+        <p class="eyebrow">Prices</p>
+        <h2>Clear pricing helps customers decide quickly.</h2>
+        <p>
+          Local business websites should answer the questions people have before
+          they call: what do you offer, how much does it cost, when are you open,
+          and how do I book?
+        </p>
+      </div>
+      <div class="price-list">
+        <article><span>Classic cut</span><strong>£18</strong></article>
+        <article><span>Skin fade</span><strong>£24</strong></article>
+        <article><span>Cut & beard</span><strong>£30</strong></article>
+        <article><span>Under 16s</span><strong>£14</strong></article>
+      </div>
+    </section>
 
-        <article class="panel">
-          <div class="panel-heading">
-            <div>
-              <h2>Focus areas</h2>
-              <p>Priority improvements for the sprint.</p>
-            </div>
-            <span>Now</span>
-          </div>
-          <ul class="focus-list">
-            <li><span></span> Improve mobile conversion flow</li>
-            <li><span></span> Review project launch checklist</li>
-            <li><span></span> Finalise client feedback round</li>
-            <li><span></span> Prepare deployment notes</li>
-          </ul>
-        </article>
-      </section>
+    <section class="section hours" id="hours">
+      <div>
+        <p class="eyebrow">Opening hours</p>
+        <h2>Key details should be visible without hunting around.</h2>
+      </div>
+      <div class="hours-grid">
+        <article><span>Tuesday</span><strong>09:00–18:00</strong></article>
+        <article><span>Wednesday</span><strong>09:00–18:00</strong></article>
+        <article><span>Thursday</span><strong>10:00–20:00</strong></article>
+        <article><span>Friday</span><strong>09:00–18:00</strong></article>
+        <article><span>Saturday</span><strong>08:30–16:00</strong></article>
+        <article><span>Sunday/Monday</span><strong>Closed</strong></article>
+      </div>
+    </section>
 
-      <section class="panel" id="projects">
-        <div class="panel-heading">
-          <div>
-            <h2>Project pipeline</h2>
-            <p>Current status across active client work.</p>
-          </div>
-          <span>12 active</span>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Project</th>
-                <th>Client</th>
-                <th>Status</th>
-                <th>Progress</th>
-                <th>Due</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Booking Website</td>
-                <td>StayEase</td>
-                <td><span class="badge active">Build</span></td>
-                <td><div class="progress"><span style="width: 72%"></span></div></td>
-                <td>28 May</td>
-              </tr>
-              <tr>
-                <td>Landing Page</td>
-                <td>LaunchPad</td>
-                <td><span class="badge review">Review</span></td>
-                <td><div class="progress"><span style="width: 88%"></span></div></td>
-                <td>31 May</td>
-              </tr>
-              <tr>
-                <td>Portfolio Refresh</td>
-                <td>Freelance</td>
-                <td><span class="badge planned">Planning</span></td>
-                <td><div class="progress"><span style="width: 34%"></span></div></td>
-                <td>04 Jun</td>
-              </tr>
-              <tr>
-                <td>Service Website</td>
-                <td>Local Trade Co.</td>
-                <td><span class="badge active">Build</span></td>
-                <td><div class="progress"><span style="width: 61%"></span></div></td>
-                <td>09 Jun</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+    <section class="section reviews">
+      <p class="eyebrow">Reviews</p>
+      <h2>Social proof for first-time customers.</h2>
+      <div class="quote-grid">
+        <blockquote>
+          “Easy to book, good price, and the cut was exactly what I asked for.”
+          <cite>— Example customer</cite>
+        </blockquote>
+        <blockquote>
+          “The opening times and prices were clear, so I booked without needing to call first.”
+          <cite>— Example customer</cite>
+        </blockquote>
+      </div>
+    </section>
 
-      <section class="lower-grid">
-        <article class="panel" id="workload">
-          <div class="panel-heading">
-            <div>
-              <h2>Team workload</h2>
-              <p>Visual workload distribution.</p>
-            </div>
-            <span>This week</span>
-          </div>
-          <div class="workload-list">
-            <article>
-              <div><strong>Design</strong><span>8 tasks</span></div>
-              <div class="progress"><span style="width: 80%"></span></div>
-            </article>
-            <article>
-              <div><strong>Development</strong><span>12 tasks</span></div>
-              <div class="progress"><span style="width: 64%"></span></div>
-            </article>
-            <article>
-              <div><strong>Content</strong><span>5 tasks</span></div>
-              <div class="progress"><span style="width: 42%"></span></div>
-            </article>
-          </div>
-        </article>
-
-        <article class="panel" id="timeline">
-          <div class="panel-heading">
-            <div>
-              <h2>Recent activity</h2>
-              <p>Latest project updates.</p>
-            </div>
-            <span>Live feed</span>
-          </div>
-          <div class="activity-list">
-            <article>
-              <strong>Homepage layout approved</strong>
-              <p>Client signed off on the responsive structure.</p>
-            </article>
-            <article>
-              <strong>Project copy updated</strong>
-              <p>Descriptions now focus on outcomes and next steps.</p>
-            </article>
-            <article>
-              <strong>QA checklist completed</strong>
-              <p>Spacing, links, and mobile behaviour reviewed.</p>
-            </article>
-          </div>
-        </article>
-      </section>
+    <section id="contact" class="cta">
+      <p class="eyebrow">Book now</p>
+      <h2>Make it easy for customers to take the next step.</h2>
+      <p>
+        This demo shows how a local appointment-based business can use a website
+        to present services, pricing, opening hours, reviews, and contact details.
+      </p>
+      <a href="mailto:hello@example.com" class="button primary">Request a Booking</a>
     </section>
   </main>
 </body>
