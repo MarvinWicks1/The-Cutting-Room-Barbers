@@ -10,8 +10,8 @@
   <header class="site-header">
     <a href="index.html" class="brand">The Cutting Room</a>
     <nav aria-label="Primary navigation">
-      <a href="#services">Services</a>
-      <a href="#prices">Prices</a>
+      <a href="#services">Cuts</a>
+      <a href="#prices">Price List</a>
       <a href="#hours">Hours</a>
       <a href="#contact">Book</a>
     </nav>
@@ -20,66 +20,78 @@
   <main>
     <section class="hero">
       <div>
-        <p class="eyebrow">Local barber shop</p>
-        <h1>Sharp cuts, easy booking, and clear opening times.</h1>
+        <p class="eyebrow">Back street barber / fictional demo</p>
+        <h1>Good cuts. No awkward booking system.</h1>
         <p class="intro">
-          The Cutting Room is a fictional barber shop website concept designed
-          for a local business that needs to show services, prices, opening hours,
-          customer reviews, and a clear way to book.
+          A barber shop concept with the kind of details a customer actually checks before visiting: prices, how long it takes, when late nights are, where to park, and whether walk-ins are still welcome.
         </p>
         <div class="actions">
-          <a href="#contact" class="button primary">Book an Appointment</a>
-          <a href="#prices" class="button secondary">View Prices</a>
+          <a href="#contact" class="button primary">Text to Book</a>
+          <a href="#prices" class="button secondary">Check the board</a>
         </div>
       </div>
-      <aside class="hero-panel">
-        <p>Walk-ins welcome</p>
-        <strong>Tue–Sat</strong>
-        <span>Classic cuts, skin fades, beard trims, and simple online booking.</span>
+      <aside class="hero-panel shop-ticket">
+        <p>Today in the chair</p>
+        <strong>12:40</strong>
+        <span>Next quiet slot: after lunch. Walk-ins usually easier before 3pm.</span>
       </aside>
     </section>
 
-    <section class="feature-strip" aria-label="Business highlights">
-      <article><strong>4.9★</strong><span>example review score</span></article>
-      <article><strong>30 min</strong><span>typical appointment</span></article>
-      <article><strong>Central</strong><span>easy local location</span></article>
+    <section class="notice-row" aria-label="Shop notes">
+      <article><strong>Late night Thu</strong><span>open until 8pm</span></article>
+      <article><strong>Cash or card</strong><span>simple payment at the chair</span></article>
+      <article><strong>Parking nearby</strong><span>2 minutes from the high street</span></article>
     </section>
 
-    <section id="services" class="section">
+    <section id="services" class="section cut-menu">
       <div class="section-heading">
-        <p class="eyebrow">Services</p>
-        <h2>Simple service cards that make choices easy.</h2>
+        <p class="eyebrow">Cut menu</p>
+        <h2>A service section that feels like the shop, not a template.</h2>
       </div>
-      <div class="service-grid">
+      <div class="service-grid offset-grid">
         <article class="service-card">
-          <h3>Classic cut</h3>
-          <p>A clean everyday cut finished with styling and product advice.</p>
+          <span class="mini-label">Everyday</span>
+          <h3>Short back & sides</h3>
+          <p>Reliable, tidy, and easy to maintain. Ideal if you just want to look sharp without overthinking it.</p>
         </article>
         <article class="service-card dark">
+          <span class="mini-label">Popular</span>
           <h3>Skin fade</h3>
-          <p>A sharp fade with extra time for detail, blending, and finish.</p>
+          <p>Extra time on the blend, neckline, and finish. Best booked rather than squeezed in at the end of the day.</p>
         </article>
         <article class="service-card">
-          <h3>Beard trim</h3>
-          <p>Shape, tidy, and finish for beards, stubble, and longer styles.</p>
+          <span class="mini-label">Add-on</span>
+          <h3>Beard shape-up</h3>
+          <p>Cheeks, neckline, length, and shape tidied up with a clean finish before you head out.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="shop-board">
+      <div>
+        <p class="eyebrow">Shop board</p>
+        <h2>Custom sections help the page feel like a real place.</h2>
+      </div>
+      <div class="board-notes">
+        <article><strong>Best time for walk-ins</strong><span>Tuesday or Wednesday before 3pm</span></article>
+        <article><strong>Usually busy</strong><span>Friday after work and Saturday mornings</span></article>
+        <article><strong>Bring a reference</strong><span>Photos help with fades and longer restyles</span></article>
       </div>
     </section>
 
     <section class="section split" id="prices">
       <div>
-        <p class="eyebrow">Prices</p>
-        <h2>Clear pricing helps customers decide quickly.</h2>
+        <p class="eyebrow">Price board</p>
+        <h2>Prices shown clearly, like customers expect.</h2>
         <p>
-          Local business websites should answer the questions people have before
-          they call: what do you offer, how much does it cost, when are you open,
-          and how do I book?
+          For local shops, a clear price list removes friction. Customers do not want to dig through social media or send a message just to find the basics.
         </p>
       </div>
-      <div class="price-list">
-        <article><span>Classic cut</span><strong>£18</strong></article>
-        <article><span>Skin fade</span><strong>£24</strong></article>
-        <article><span>Cut & beard</span><strong>£30</strong></article>
+      <div class="price-list chalk-list">
+        <article><span>Dry cut</span><strong>£16</strong></article>
+        <article><span>Classic cut</span><strong>£19</strong></article>
+        <article><span>Skin fade</span><strong>£25</strong></article>
+        <article><span>Cut & beard</span><strong>£32</strong></article>
         <article><span>Under 16s</span><strong>£14</strong></article>
       </div>
     </section>
@@ -87,39 +99,38 @@
     <section class="section hours" id="hours">
       <div>
         <p class="eyebrow">Opening hours</p>
-        <h2>Key details should be visible without hunting around.</h2>
+        <h2>Make the basics impossible to miss.</h2>
       </div>
       <div class="hours-grid">
-        <article><span>Tuesday</span><strong>09:00–18:00</strong></article>
-        <article><span>Wednesday</span><strong>09:00–18:00</strong></article>
+        <article><span>Tuesday</span><strong>09:30–17:30</strong></article>
+        <article><span>Wednesday</span><strong>09:30–17:30</strong></article>
         <article><span>Thursday</span><strong>10:00–20:00</strong></article>
-        <article><span>Friday</span><strong>09:00–18:00</strong></article>
+        <article><span>Friday</span><strong>09:30–18:00</strong></article>
         <article><span>Saturday</span><strong>08:30–16:00</strong></article>
         <article><span>Sunday/Monday</span><strong>Closed</strong></article>
       </div>
     </section>
 
     <section class="section reviews">
-      <p class="eyebrow">Reviews</p>
-      <h2>Social proof for first-time customers.</h2>
+      <p class="eyebrow">What customers notice</p>
+      <h2>Reviews should sound specific enough to be believable.</h2>
       <div class="quote-grid">
         <blockquote>
-          “Easy to book, good price, and the cut was exactly what I asked for.”
+          “Booked on my lunch break, was in the chair on time, and the fade was clean. No messing about.”
           <cite>— Example customer</cite>
         </blockquote>
         <blockquote>
-          “The opening times and prices were clear, so I booked without needing to call first.”
-          <cite>— Example customer</cite>
+          “The price list and late night hours were the reason I tried it. Did not have to message just to ask the basics.”
+          <cite>— Example first-time customer</cite>
         </blockquote>
       </div>
     </section>
 
     <section id="contact" class="cta">
-      <p class="eyebrow">Book now</p>
-      <h2>Make it easy for customers to take the next step.</h2>
+      <p class="eyebrow">Book a chair</p>
+      <h2>Text your name, preferred time, and the cut you want.</h2>
       <p>
-        This demo shows how a local appointment-based business can use a website
-        to present services, pricing, opening hours, reviews, and contact details.
+        This demo shows how a local appointment-based business can feel more personal online while still making prices, hours, services, and booking details easy to find.
       </p>
       <a href="mailto:hello@example.com" class="button primary">Request a Booking</a>
     </section>
