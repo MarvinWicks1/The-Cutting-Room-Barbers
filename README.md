@@ -1,15 +1,24 @@
 # Northstar Dashboard
 
-A responsive dashboard UI concept built with HTML and pure CSS.
+This is a dashboard UI concept I built to practise designing something that feels more like a web app rather than a normal landing page.
 
-## Features
+I wanted this project to show that I can work with more detailed layouts, not just simple homepage sections. It includes a sidebar, metric cards, project table, status badges, progress bars, workload panels, and recent activity cards.
 
-- Sidebar layout
-- Metric cards
-- Chart-style visual section
-- Activity panel
-- Responsive mobile layout
+## What I practised
 
-## Purpose
+- Dashboard-style layouts
+- Responsive grid systems
+- Tables and status badges
+- Progress indicators
+- Dark UI styling
+- Keeping a busy interface readable
 
-This project demonstrates dashboard layout, card-based UI design, responsive structure, and clean CSS styling.
+## Tech used
+
+- HTML
+- CSS
+- GitHub Pages
+
+## What I would improve next
+
+The next step would be adding real JavaScript functionality, such as filtering the table, changing project statuses, or loading the dashboard data from an array.
