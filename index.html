@@ -12,42 +12,60 @@
       <a href="index.html" class="logo">Northstar</a>
       <nav aria-label="Dashboard sections">
         <a href="#overview">Overview</a>
-        <a href="#insights">Insights</a>
-        <a href="#activity">Activity</a>
+        <a href="#projects">Projects</a>
+        <a href="#workload">Workload</a>
+        <a href="#timeline">Timeline</a>
       </nav>
+      <div class="sidebar-card">
+        <p>Current sprint</p>
+        <strong>72%</strong>
+        <span>Tasks completed across active projects.</span>
+      </div>
     </aside>
 
     <section class="content" id="overview">
       <header class="page-header">
         <div>
-          <p class="eyebrow">CSS dashboard demo</p>
-          <h1>Project performance dashboard</h1>
+          <p class="eyebrow">Dashboard UI concept</p>
+          <h1>Project operations dashboard</h1>
+          <p class="header-copy">
+            A responsive dashboard interface for tracking project health,
+            team workload, delivery progress, and recent activity.
+          </p>
         </div>
         <a class="back-link" href="https://github.com/MarvinWicks1/Portfolio">Portfolio Repo</a>
       </header>
 
       <section class="metrics" aria-label="Dashboard metrics">
         <article>
-          <span>Total visits</span>
-          <strong>24.8k</strong>
-          <p>Up 18% this month</p>
-        </article>
-        <article>
-          <span>Conversion rate</span>
-          <strong>7.4%</strong>
-          <p>Landing page improved</p>
+          <span>Total revenue</span>
+          <strong>£42.8k</strong>
+          <p>Up 16% from last month</p>
         </article>
         <article>
           <span>Active projects</span>
           <strong>12</strong>
-          <p>Three launching soon</p>
+          <p>Three launching this week</p>
+        </article>
+        <article>
+          <span>Avg. delivery</span>
+          <strong>18d</strong>
+          <p>Two days faster than target</p>
+        </article>
+        <article>
+          <span>Client satisfaction</span>
+          <strong>94%</strong>
+          <p>Based on recent feedback</p>
         </article>
       </section>
 
-      <section class="grid" id="insights">
+      <section class="grid" aria-label="Dashboard insights">
         <article class="panel chart-panel">
           <div class="panel-heading">
-            <h2>Weekly activity</h2>
+            <div>
+              <h2>Weekly performance</h2>
+              <p>Revenue, delivery, and activity trend sample.</p>
+            </div>
             <span>Last 7 days</span>
           </div>
           <div class="bar-chart" aria-label="Bar chart visual">
@@ -63,36 +81,122 @@
 
         <article class="panel">
           <div class="panel-heading">
-            <h2>Focus areas</h2>
-            <span>Current sprint</span>
+            <div>
+              <h2>Focus areas</h2>
+              <p>Priority improvements for the sprint.</p>
+            </div>
+            <span>Now</span>
           </div>
           <ul class="focus-list">
-            <li><span></span> Improve mobile spacing</li>
-            <li><span></span> Refine project copy</li>
-            <li><span></span> Add stronger calls to action</li>
+            <li><span></span> Improve mobile conversion flow</li>
+            <li><span></span> Review project launch checklist</li>
+            <li><span></span> Finalise client feedback round</li>
+            <li><span></span> Prepare deployment notes</li>
           </ul>
         </article>
       </section>
 
-      <section class="panel" id="activity">
+      <section class="panel" id="projects">
         <div class="panel-heading">
-          <h2>Recent activity</h2>
-          <span>UI sample</span>
+          <div>
+            <h2>Project pipeline</h2>
+            <p>Current status across active client work.</p>
+          </div>
+          <span>12 active</span>
         </div>
-        <div class="activity-list">
-          <article>
-            <strong>Homepage layout reviewed</strong>
-            <p>Spacing and section hierarchy updated for readability.</p>
-          </article>
-          <article>
-            <strong>Project card copy improved</strong>
-            <p>Descriptions now explain goals, audience, and value.</p>
-          </article>
-          <article>
-            <strong>Responsive checks completed</strong>
-            <p>Cards stack neatly across tablet and mobile layouts.</p>
-          </article>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Client</th>
+                <th>Status</th>
+                <th>Progress</th>
+                <th>Due</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Booking Website</td>
+                <td>StayEase</td>
+                <td><span class="badge active">Build</span></td>
+                <td><div class="progress"><span style="width: 72%"></span></div></td>
+                <td>28 May</td>
+              </tr>
+              <tr>
+                <td>Landing Page</td>
+                <td>LaunchPad</td>
+                <td><span class="badge review">Review</span></td>
+                <td><div class="progress"><span style="width: 88%"></span></div></td>
+                <td>31 May</td>
+              </tr>
+              <tr>
+                <td>Portfolio Refresh</td>
+                <td>Freelance</td>
+                <td><span class="badge planned">Planning</span></td>
+                <td><div class="progress"><span style="width: 34%"></span></div></td>
+                <td>04 Jun</td>
+              </tr>
+              <tr>
+                <td>Service Website</td>
+                <td>Local Trade Co.</td>
+                <td><span class="badge active">Build</span></td>
+                <td><div class="progress"><span style="width: 61%"></span></div></td>
+                <td>09 Jun</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel" id="workload">
+          <div class="panel-heading">
+            <div>
+              <h2>Team workload</h2>
+              <p>Visual workload distribution.</p>
+            </div>
+            <span>This week</span>
+          </div>
+          <div class="workload-list">
+            <article>
+              <div><strong>Design</strong><span>8 tasks</span></div>
+              <div class="progress"><span style="width: 80%"></span></div>
+            </article>
+            <article>
+              <div><strong>Development</strong><span>12 tasks</span></div>
+              <div class="progress"><span style="width: 64%"></span></div>
+            </article>
+            <article>
+              <div><strong>Content</strong><span>5 tasks</span></div>
+              <div class="progress"><span style="width: 42%"></span></div>
+            </article>
+          </div>
+        </article>
+
+        <article class="panel" id="timeline">
+          <div class="panel-heading">
+            <div>
+              <h2>Recent activity</h2>
+              <p>Latest project updates.</p>
+            </div>
+            <span>Live feed</span>
+          </div>
+          <div class="activity-list">
+            <article>
+              <strong>Homepage layout approved</strong>
+              <p>Client signed off on the responsive structure.</p>
+            </article>
+            <article>
+              <strong>Project copy updated</strong>
+              <p>Descriptions now focus on outcomes and next steps.</p>
+            </article>
+            <article>
+              <strong>QA checklist completed</strong>
+              <p>Spacing, links, and mobile behaviour reviewed.</p>
+            </article>
+          </div>
+        </article>
       </section>
     </section>
   </main>
